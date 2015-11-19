@@ -34,10 +34,10 @@ public class DBConnection {
 		String mongoDBName = System.getenv("MONGODB_DATABASE");
 		// Check if we are using a mongoDB template or mongodb RHEL 7 image
 		if (mongoHost == null) {
-			mongoHost = System.getenv("MONGODB_24_CENTOS7_SERVICE_HOST");
+			mongoHost = System.getenv("MONGODB_24_RHEL7_SERVICE_HOST");
 		} 
 		if (mongoPort == null) {
-			mongoPort = System.getenv("MONGODB_24_CENTOS7_SERVICE_PORT");
+			mongoPort = System.getenv("MONGODB_24_RHEL7_SERVICE_PORT");
 		}
 		
 		int port = Integer.decode(mongoPort);
